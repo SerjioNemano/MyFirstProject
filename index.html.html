@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>-=Supply Hero=-</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="scripts/index.js"></script>
+</head>
+<body>
+	<header class="header">
+	</header>
+	<main >
+		<div class="headline">
+		<img src="logo.png" width="150">
+		
+			<span><h1>-=Supply Hero=-</h1><h3>сократит время подготовки сопроводительной документации</h3></span>
+		</div>
+		<div class="desk">
+			<fieldset class="borgerdesk">
+
+			<fieldset>
+				<legend> Выберите тип документа </legend>
+					<input type="radio" name="contract" value="keyOne"><span> Контракт </span><br>
+					<input type="radio" name="contract" value="keyTwo"><span> Договор </span> <br>
+			</fieldset>
+			<fieldset>
+				<legend> Номер и дата документа </legend>
+					<input type="text" id="number"><span> Номер </span> <br>
+					<input type="text" id="data"><span> Дата </span> <br>
+			</fieldset>
+			<fieldset>
+				<legend title="Вводите в это поле организационную форму поставщика,название и город"> Поставщик </legend>
+					<input type="text" id="nameseller" ><span> Наименование поставщика</span><br>
+					<input type="text" id='inn' name=""><span> ИНН </span><br>
+					<input type="text" id='kpp' name=""><span> КПП </span><br>
+					<input type="text" id='ogrn' name=""><span> ОГРН </span>
+			</fieldset>
+			<fieldset>
+				<legend title="Вы, возможно, удивитесь, но сюда необходимо ввести предмет закупки"> Предмет закупки </legend>
+					<input type="text" id="theme"><span> Предмет закупки </span><br>
+					<input type="text" id='OKPD2' name=""><span> ОКПД 2 </span><br>
+					<input type="text" id='OKVED2' name=""><span> ОКВЭД 2 </span>
+			</fieldset>
+			<fieldset>
+				<legend > Сумма закупки </legend>
+					<input type="text" name="" id="total"><span> Сумма закупки </span><br>
+			</fieldset>
+			<fieldset>
+				<legend> Способ закупки у единственного поставщика </legend>
+					<input type="radio" name="mode" id="goz" value="goz"><span> Заключается договор в целях выполнения государственного оборонного заказа </span><br>
+					<input type="radio" name="mode" id="kd" value="kd"><span> Заключается договор с поставщиком указанным в КД </span><br>
+					<input type="radio" name="mode" id="min" value="min"><span> Осуществляется закупка до 100 000р. </span>
+			</fieldset>
+			<fieldset>
+				<legend> Отношение к 1247 </legend>
+					<input type="radio" name="decree" id="yes" value="yes"><span> Относится </span> <br>
+					<input type="radio" name="decree" id="no" value="no"><span> Не относится </span>
+			</fieldset>
+			<div class="button">
+				<input type="reset" name="" value="Сбросить">
+				<input type="button" name="" value="Подготовить документы" onclick="prepare()">
+			</div>
+			<div name="preparedocumentation" style="display: none;" id="doc">
+				<fieldset >
+					<legend> Необходимые документы </legend>
+					<div class="checkbutton"> 
+						<input type="checkbox" name="doc" class="documentations" value="0" onclick="prepareDoc()"> Документация о закупке <br>
+						<input type="checkbox" name="doc" class="documentations"  value="1" onclick="prepareDoc()"> Протокол заседания закупочной комиссии <br>
+						<input type="checkbox" name="doc" class="documentations"  value="2" onclick="prepareDoc()">Пояснительная записка <br>
+					</div>
+					<div class="hidebutton">
+						<a href="documentation.html" target="_blank" >
+							<input type="button" id="0" style="display: none; " class="button" value="Документация о закупке " >
+						</a>
+						<a href="protocolOfaMeeting.html" target="_blank">
+							<input type="button" id="1" style="display: none;" class="button" name="" value="Протокол заседания закупочной комиссии "  >
+						</a>
+						<a href="explanatoryNote.html" target="_blank">
+							<input type="button" id="2" style="display: none;" class="button" name="checkdoc" value="Пояснительная записка "  >
+						</a>
+					</div>
+
+				</fieldset>
+				</div>
+				</fieldset>
+			</div>
+	</main>
+	<footer class="footer">
+	</footer>
+
+					
+				
+	
+</body>
+</html>

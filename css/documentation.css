@@ -1,0 +1,49 @@
+main{
+	width: 190mm;
+	padding: 5mm;
+
+}
+table {
+	border-collapse: collapse;
+	}
+}	
+/*Первая таблица*/
+.table_supply {
+	border: 1px solid black;
+	border-collapse: collapse;
+	position: relative;
+}
+/*Ячейки первой таблицы*/
+.table_supply tr td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.pp{
+	width: 5mm;
+}
+.question{
+	width: 95mm;
+}
+.answer{
+	width: 90mm;
+}
+}
+/*Ячейка приложения*/
+.prilojenie{
+	padding-top:5mm; 
+}
+
+/*ячейки должностей*/
+.function{
+			width: 70mm;
+			height: 15mm;
+		}
+		.podpis, .fio {
+			width: 60mm;
+			text-decoration: overline;
+			text-align: center;
+		}
+		.none{
+			color: white;
+		}
+/*Ячейки подписантов*/

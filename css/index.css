@@ -1,0 +1,62 @@
+main{
+  
+  background: linear-gradient(#191970,#1E90FF);
+
+}
+/* Полноценный хедер в перспективе будет тут. Звездное небо итд
+header.header {
+  
+  
+  min-height: 20px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 0 5px 0 #333333;
+  background-color: #0F0878;
+}*/
+.headline{
+  color: #fffbdc;
+  text-align: center;
+}
+.desk{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 60%;
+  margin-left: 20%;
+  color: #fffbdc;
+  
+
+}
+.hidebutton{
+  width:60%;
+  float: right;
+}
+.checkbutton{
+  width:40%; 
+  float: left;
+
+
+}
+.button{
+  margin-left: 35%;
+}
+legend,span{
+    
+    border-radius: 10px;
+  }
+fieldset, input{
+  border-radius: 10px;
+  margin: 2px; 
+}
+a{
+   text-decoration: none;
+}
+
+/*footer.footer{
+position: relative;
+  z-index: 5;
+  min-height: 20px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 0 5px 0 #333333;
+}
+*/
